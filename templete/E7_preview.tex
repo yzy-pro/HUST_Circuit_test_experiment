@@ -1,0 +1,122 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+
+% 页面设置
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\setlength{\headheight}{15pt}
+
+% 页眉页脚设置
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{实\hspace{0.5em}验\hspace{0.5em}原\hspace{0.5em}始\hspace{0.5em}记\hspace{0.5em}录}
+\fancyfoot[L]{\parbox[t]{\textwidth}{实验人员：\underline{陈恪瑾}  学号：\underline{U202413925}  同组人员：\underline{黄伟峰}}}
+\fancyfoot[R]{教师签字：\underline{\hspace{3cm}}}
+
+% 标题设置
+
+
+\begin{document}
+
+% 正文第一行标题
+\noindent
+{\Large \textbf{实验七：}\underline{\textbf{示波器和函数发生器的使用}}} \hfill {\Large \textbf{试验台编号：}\underline{\textbf{05}}}
+\vspace{0.5cm}
+
+\section*{一、实验注意事项}
+\begin{enumerate}
+    \item 示波器和信号发生器的公共端应连接在一起。
+    \item 所有示波器使用前都应回复出厂设置，修改通道的默认放大倍数为1。
+    \item 波形不稳定是应采取平均值或使用单次触发。
+    \item 示波器调不好则采用Autoset快捷按钮。
+    \item 注意实验记录波形的作图相关要求。
+\end{enumerate}
+
+\section*{二、实验线路}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{E7_preview/schematic.png}
+    \caption{实验线路图}
+    \label{fig:schematic}
+\end{figure}
+
+\section*{三、数据记录}
+
+% 设置表格行高
+\renewcommand{\arraystretch}{2.0}
+
+\begin{longtable}{|c|p{2cm}|p{2.5cm}|p{4.5cm}|p{4cm}|}
+    \caption{示波器操作训练} \\
+    \hline
+    \textbf{序号} & \textbf{任务} & \textbf{信号发生器设置} & \textbf{示波器设置} & \textbf{波形图} \\
+    \hline
+    \endfirsthead
+    
+    \multicolumn{5}{c}{{\tablename\ \thetable{} -- 续}} \\
+    \hline
+    \textbf{序号} & \textbf{任务} & \textbf{信号发生器设置} & \textbf{示波器设置} & \textbf{波形图} \\
+    \hline
+    \endhead
+    
+    \hline
+    \multicolumn{5}{r}{{续下页}} \\
+    \endfoot
+    
+    \hline
+    \endlastfoot
+        1 & 调出两个通道的扫描线 & & 工作方式：YT \newline 通道：CH1、CH2 & 同一坐标系下绘制 CH1、CH2 两条扫描线 \\
+        \hline
+        2 & Y 轴灵敏度的调节 & 波形：正弦波 \newline 频率：400Hz \newline 峰峰值：6V & 工作方式：YT \newline 两个通道连接同一个输入信号 \newline CH1：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合 \newline CH2：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合 & 同一坐标系下绘制 CH1、CH2 两个波形  \\
+        \hline
+        3 & 工作方式的调整 & 同上 & 工作方式：XY \newline 两个通道连接同一个输入信号 \newline CH1：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合 \newline CH2：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合 & 绘制 XY 坐标系下的波形  \\
+        \hline
+        4 & 水平扫描速度调节 & 波形：正弦波 \newline 频率：50Hz \newline 峰峰值：6V & 工作方式：YT \newline CH1：1V/div，交流耦合 \newline (1)水平扫描速度：\uline{\phantom{\hspace{2cm}}}s/div \newline (2)水平扫描速度：\uline{\phantom{\hspace{2cm}}}s/div & 分别绘制不同扫描速度下的波形  \\
+        \hline
+        5 & 学习输入耦合方式的影响 & 波形：正方波 \newline 频率：400Hz \newline 峰峰值：6V \newline 偏置：3V & 工作方式：YT \newline 三个通道连接同一个输入信号 \newline CH1：5V/div，交流耦合 \newline CH2：5V/div，直流耦合 \newline CH3：5V/div，接地耦合 & 同一坐标系下绘制 CH1、CH2、CH3 三个波形  \\
+        \hline
+        6 & 验证示波器校正方波 & & 工作方式：YT \newline 两个通道同时连接示波器的校正方波 \newline CH1：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合 \newline CH2：\uline{\phantom{\hspace{2cm}}}V/div，直流耦合 & 判断该校正方波是否存在直流偏置  \\
+        \hline
+        7 & 学习示波器的光标功能 & CH1：400Hz 正弦波，峰峰值 8V \newline  & 工作方式：YT \newline CH1：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合  \newline 调出示波器光标进行测量 & CH1： \newline 峰峰值\uline{\phantom{\hspace{2cm}}}V \newline 周期\uline{\phantom{\hspace{2cm}}}s \\
+        \hline
+        8 & 学习示波器的测量功能 & CH1：400Hz 正弦波，峰峰值 8V \newline  & 工作方式：YT \newline CH1：\uline{\phantom{\hspace{2cm}}}V/div，交流耦合 \newline 调出示波器的测量功能并记录相应结果 & CH1： \newline 峰峰值\uline{\phantom{\hspace{2cm}}}V \newline 频率\uline{\phantom{\hspace{2cm}}}Hz \newline \\
+\end{longtable}
+
+\vspace{0.5cm}
+
+% 重新设置第二个表格的行高
+\renewcommand{\arraystretch}{2.0}
+
+\begin{table}[H]
+\centering
+\caption{不同元件电压、电流关系测量}
+\label{tab:7-2}
+\begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+序号 & 电源设置 & 负载 & \multicolumn{3}{c|}{电压幅值} & 波形 \\
+\cline{4-6}
+ &  &  & $U_{Lm}$ & $U_{rm}$ & $\varphi_{u-i}$ &  \\
+\hline
+1 & $u_s = 5\sin 100\pi t$ & $R=200\Omega$ & \rule{0pt}{3ex} & & & \\
+\hline
+2 & $u_s = 5\sin 100\pi t$ & $C=2.2\mu F$ & \rule{0pt}{3ex} & & & \\
+\hline
+3 & $u_s = 5\sin 2000\pi t$ & $L=100mH$ & \rule{0pt}{3ex} & & & \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
