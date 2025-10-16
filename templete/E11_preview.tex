@@ -1,0 +1,93 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+
+% 页面设置
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\setlength{\headheight}{15pt}
+
+% 页眉页脚设置
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{实\hspace{0.5em}验\hspace{0.5em}原\hspace{0.5em}始\hspace{0.5em}记\hspace{0.5em}录}
+\fancyfoot[L]{\parbox[t]{\textwidth}{实验人员：\underline{陈恪瑾}  学号：\underline{U202413925}  同组人员：\underline{黄伟峰}}}
+\fancyfoot[R]{教师签字：\underline{\hspace{3cm}}}
+
+\begin{document}
+
+% 正文第一行标题
+\noindent
+{\Large \textbf{实验十一：}\underline{\textbf{串联谐振电路}}} \hfill {\Large \textbf{实验台编号：}\underline{\textbf{05}}}
+\vspace{0.5cm}
+
+\section*{一、实验注意事项}
+\begin{enumerate}
+    \item 测量时，应保证电源电压有效值不变。
+    
+    \item 电感线圈具有电阻，电路中$ R $包含了电感线圈的电阻。
+    
+    \item 采样电阻$ r $应远小于被测电路的入端阻抗。
+    
+\end{enumerate}
+
+\section*{二、实验线路}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{E11_preview/schematic.png}
+    \caption{串联谐振实验电路}
+    \label{fig:circuit}
+\end{figure}
+
+\section*{三、实验数据}
+$ Q = 1.5, R = 510 $
+
+\begin{longtable}{|c|*{9}{c|}}
+\caption{幅频特性和相频特性数据} \label{tab:data} \\
+\hline
+ & $f_{l3}$ & $f_{l2}$ & $f_{lc}$ & $f_{l1}$ & $f_0$ & $f_{h1}$ & $f_{hc}$ & $f_{h2}$ & $f_{h3}$ \\
+\hline
+\endfirsthead
+
+\multicolumn{10}{c}%
+{\tablename\ \thetable\ -- 续表} \\
+\hline
+ & $f_{l3}$ & $f_{l2}$ & $f_{lc}$ & $f_{l1}$ & $f_0$ & $f_{h1}$ & $f_{hc}$ & $f_{h2}$ & $f_{h3}$ \\
+\hline
+\endhead
+
+\hline
+\multicolumn{10}{r}{续下页} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+频率$f$ (Hz) &320 & 640& 854& 980& 1362& 1640& 1840& 2180& 3280\\
+\hline
+$u_{rpp}(V)$  & 9.87& 9.48& 9.05& 8.73& 7.71& 7.14& 6.71& 5.85& 4.31\\
+\hline
+$I(mA)$ & 2.72& 5.52& 7.75& 9.18& 10.96& 9.20& 7.74& 5.48& 2.75\\
+\hline
+$I/I_0$ & $\frac{1}{4}$& $\frac{1}{2}$& $\frac{1}{\sqrt{2}}$ & $\frac{1}{2^{\frac{1}{4}}}$& 1 & $\frac{1}{2^{\frac{1}{4}}}$& $\frac{1}{\sqrt{2}}$ & $\frac{1}{2}$& $\frac{1}{4}$\\
+\hline
+$\Phi_{u_s-i}(^\circ)$ & -80.12& -67.69& -54.0& -41.96& 0 & 25.88& 39.33& 53.68& 72.00\\
+\hline
+\end{longtable}
+
+
+\end{document}
