@@ -113,7 +113,7 @@ $$\psi(t) = \int_0^t u_L(t')dt'$$
     
     采样电阻的作用是将电流信号转换为电压信号，使示波器能够间接测量电流。采样电阻应满足$R \gg r$的条件，以减少对原电路的影响，避免改变电路的工作状态，保证测量的准确性。
     
-    \vspace{2cm}
+    \vspace{1cm}
     
     \item 示波器测量元件特性曲线的原理是什么？为什么必须把显示方式设置成X-Y模式？
     
@@ -126,7 +126,7 @@ $$\psi(t) = \int_0^t u_L(t')dt'$$
         \item X-Y模式能够实时显示元件的静态和动态特性曲线，不同元件呈现不同形状：电阻为直线，电容和电感为椭圆。
     \end{itemize}
     
-    \vspace{2cm}
+    \vspace{1cm}
     
     
     
@@ -271,11 +271,11 @@ $$\psi(t) = \int_0^t u_L(t')dt'$$
 \textbf{数据分析：}
 \begin{itemize}[label={}]
     \item 总阻抗理论值:
-     $$Z_{theoretical} = \sqrt{R^2 + ({\frac{1}{j \omega C}})^2} =\sqrt{{530\Omega}^2+ ({\frac{1}{j \times 2\pi \times 400Hz \times 1\mu F}})^2  } =  662.73\Omega$$
+     $$|Z_{theoretical}| = \sqrt{R^2 + ({\frac{1}{j \omega C}})^2} =\sqrt{{530\Omega}^2+ ({\frac{1}{j \times 2\pi \times 400Hz \times 1\mu F}})^2  } =  662.73\Omega$$
     \item 总阻抗实际值：
-    $$Z_{measured} = \frac{U_{CH1}}{I_{CH2}} =\frac{9.200V}{14.400mA} = 638.89\Omega$$ 
+    $$|Z_{measured}| = \frac{U_{CH1}}{I_{CH2}} =\frac{9.200V}{14.400mA} = 638.89\Omega$$ 
     \item 相对误差：
-    $$U_r(Z) = \frac{|Z_{measure} - Z_{theoretical}|}{Z_{theoretical}} \times 100\% \approx 3.60\%$$
+    $$U_r(|Z|) = \frac{||Z_{measure}| - |Z_{theoretical}||}{||Z_{theoretical}||} \times 100\% \approx 3.60\%$$
 \end{itemize}
 
 
