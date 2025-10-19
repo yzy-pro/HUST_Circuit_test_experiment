@@ -175,16 +175,16 @@ $$\psi(t) = \int_0^t u_L(t')dt'$$
 \subsection*{1. RC电路相位差测量}
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.58\textwidth}
+    \begin{subfigure}[b]{0.64\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{E8/E1波形图.png}
+        \includegraphics[width=\textwidth]{E8/E1yt.png}
         \caption{直接法测量波形}
         \label{fig:direct_method}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.38\textwidth}
+    \begin{subfigure}[b]{0.32\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{E8/E1相位图.png}
+        \includegraphics[width=\textwidth]{E8/E1xy.png}
         \caption{椭圆图形法测量}
         \label{fig:ellipse_method}
     \end{subfigure}
@@ -250,6 +250,35 @@ $$\psi(t) = \int_0^t u_L(t')dt'$$
 \begin{itemize}[label={}]
     \item 非线性电阻元件的伏安特性曲线如图所示，斜率不断变化，呈现出非线性关系，符合预期。
 \end{itemize}
+
+\subsection*{4.总阻抗的测量}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{E8/image.png}
+    \caption{测量虚线右侧电路的总阻抗}
+    \label{fig:nonlinear_resistor_va1}
+\end{figure}
+
+\textbf{数据记录：}
+\begin{itemize}
+    \item $U_{CH1} = 9.200V$， $I_{CH2} = 14.400mA$， $r = 20\Omega$， $R = 510\Omega$，$C = 1\mu F$，$f = 400Hz$
+\end{itemize}
+
+
+
+
+
+\textbf{数据分析：}
+\begin{itemize}[label={}]
+    \item 总阻抗理论值:
+     $$Z_{theoretical} = \sqrt{R^2 + ({\frac{1}{j \omega C}})^2} =\sqrt{{530\Omega}^2+ ({\frac{1}{j \times 2\pi \times 400Hz \times 1\mu F}})^2  } =  662.73\Omega$$
+    \item 总阻抗实际值：
+    $$Z_{measured} = \frac{U_{CH1}}{I_{CH2}} =\frac{9.200V}{14.400mA} = 638.89\Omega$$ 
+    \item 相对误差：
+    $$U_r(Z) = \frac{|Z_{measure} - Z_{theoretical}|}{Z_{theoretical}} \times 100\% \approx 3.60\%$$
+\end{itemize}
+
+
 
 \section*{六、实验小结}
 通过本次实验，我学会了用示波器测量电压、电流等基本电学量，并掌握了用直接法和李萨如图形法测量相位差的方法。同时通过搭建包含电阻、电容、电感元件的电路，成功测量出各元件的特性曲线。

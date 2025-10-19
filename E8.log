@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.27)  12 OCT 2025 18:44
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.27)  19 OCT 2025 09:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -667,23 +667,27 @@ File: E8/2.png Graphic file (type bmp)
 
 
 [3]
-File: E8/E1波形图.png Graphic file (type bmp)
-<E8/E1波形图.png>
-File: E8/E1相位图.png Graphic file (type bmp)
-<E8/E1相位图.png>
+File: E8/E1yt.png Graphic file (type bmp)
+<E8/E1yt.png>
+File: E8/E1xy.png Graphic file (type bmp)
+<E8/E1xy.png>
 
 
 [4]
 File: E8/E2.png Graphic file (type bmp)
 <E8/E2.png>
-
-
-[5]
 File: E8/E3.png Graphic file (type bmp)
 <E8/E3.png>
 
 
-[6] 
+[5]
+File: E8/image.png Graphic file (type bmp)
+<E8/image.png>
+
+
+[6]
+
+[7] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./E8.aux)
  ***********
@@ -694,12 +698,12 @@ Package rerunfilecheck Info: File `E8.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17945 strings out of 470267
- 383411 string characters out of 5484665
- 788005 words of memory out of 5000000
- 44317 multiletter control sequences out of 15000+600000
+ 17955 strings out of 470267
+ 383574 string characters out of 5484665
+ 788048 words of memory out of 5000000
+ 44326 multiletter control sequences out of 15000+600000
  639341 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,112p,383b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on E8.xdv (6 pages, 47032 bytes).
+Output written on E8.xdv (7 pages, 49732 bytes).
